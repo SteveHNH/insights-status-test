@@ -1,4 +1,7 @@
-FROM nginx
-MAINTAINER Stephen Adams <sadams@redhat.com>
-RUN apt-get update -y && apt-get upgrade -y && apt-get install jq curl -y && apt-get clean
-CMD ["nginx", "-g", "daemon off;"]
+# A Container for testing
+
+Just runs a simple request script to keep the container alive.
+Contains some tools used when attached for testing
+
+  - curl
+  - jq 
